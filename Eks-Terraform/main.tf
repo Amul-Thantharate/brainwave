@@ -85,7 +85,7 @@ resource "aws_eks_node_group" "brainwave" {
     }
     instance_types = [ "t2.medium" ]
     depends_on = [ 
-        aws_iam_role_policy_attachment.brainwave-AmazonEKSClusterPolicy,
+        aws_iam_role_policy_attachment.example-AmazonEKSClusterPolicy,
         aws_iam_role_policy_attachment.example-AmazonEKSWorkerNodePolicy,
         aws_iam_role_policy_attachment.example-AmazonEC2ContainerRegistryReadOnly,
     ]
