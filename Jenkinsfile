@@ -1,11 +1,6 @@
 pipeline {
     agent any 
     stages {
-        stage('Clean Workspace') {
-            steps {
-                CleanWs()
-            }
-        }
         stage("Terraform version"){
             steps {
                 sh "terraform --version"
