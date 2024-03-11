@@ -5,11 +5,6 @@ pipeline {
             AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
         }
     stages {
-        stage('Clean Workspace') {
-            steps {
-                CleanWs()
-            }
-        }
         stage("Terraform version"){
             steps {
                 sh "terraform --version"
